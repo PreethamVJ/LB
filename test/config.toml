@@ -1,0 +1,16 @@
+[load_balancer]
+address = "127.0.0.1"
+port = 8080
+algorithm = "round_robin"
+
+[[load_balancer.server]]
+address = "192.168.1.10"
+port = 9001
+max_connections = 100
+weight = 1
+
+[[load_balancer.server]]
+address = "192.168.1.11"
+port = 9002
+max_connections = 100
+weight = 2
