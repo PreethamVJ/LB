@@ -2,6 +2,7 @@
 address = "127.0.0.1"
 port = 8080
 algorithm = "round_robin"
+Layer = 4
 
 [[load_balancer.server]]
 address = "192.168.1.10"
@@ -10,6 +11,7 @@ max_connections = 100
 weight = 1
 
 [[load_balancer.server]]
+Layer = 4
 address = "192.168.1.11"
 port = 9002
 max_connections = 100

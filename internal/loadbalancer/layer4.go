@@ -6,7 +6,7 @@ import (
 	"strconv"
 	"sync"
 
-	"github.com/PreethamVJ/internal/config"
+	"github.com/PreethamVJ/LB/internal/config"
 )
 
 type Layer4 struct {

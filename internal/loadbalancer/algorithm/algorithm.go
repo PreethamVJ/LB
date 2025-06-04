@@ -1,9 +1,13 @@
 package algorithm
 
 import (
-	"github/PreethamVJ/LB/server"
+	"errors"
 	"sync"
+
+	"github.com/PreethamVJ/LB/server"
 )
+
+var ErrNoServers = errors.New("no servers available")
 
 type RoundRobin struct {
 	servers []*server.Server

@@ -39,7 +39,7 @@ func main() {
 	default:
 		log.Fatal("Unsupported layer")
 	}
-
+	log.Println("Starting load balancer...")
 	if err := lb.Start(); err != nil {
 		log.Fatal(err)
 	}
